@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Container.css';
-import pictureFrame from '../assets/picture-frame.png'
+import pictureFrame from '../assets/picture-frame.png';
+import ArtGallery from '../ArtGallery/ArtGallery.js';
 
 class Container extends Component {
   constructor(props) {
@@ -12,8 +13,11 @@ class Container extends Component {
 
   render(){
     return(
-        <div class="content">
-            <img class="frame" src={this.state.frame} />
+        <div>
+            <div class="content">
+                <img class="frame" src={this.state.frame} />
+            </div>
+            <ArtGallery/>
         </div>
     );
   }

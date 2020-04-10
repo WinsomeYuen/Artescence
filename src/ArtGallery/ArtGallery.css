@@ -1,0 +1,10 @@
+.artGallery {
+    display: inline-block;
+    margin: 30px;
+    top:0;
+    left:0;
+}
+
+.painting {
+    width: 150px;
+}
