@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './Container.css';
 import pictureFrame from '../assets/picture-frame.png';
-import ArtGallery from '../ArtGallery/ArtGallery.js';
+import ArtGallery from '../Gallery/Gallery.js';
+import { DndProvider } from 'react-dnd';
+import Backend from 'react-dnd-html5-backend';
 
-class Container extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      frame: pictureFrame
-    };
-  }
+function Container (props){
+  const [frame, setFrame] = useState(pictureFrame);
 
-  render(){
     return(
-        <div>
-            <div class="content">
-                <img class="frame" src={this.state.frame} />
-            </div>
-            <ArtGallery/>
-        </div>
+       <DndProvider backend={Backend}>
+           <div class="content">
+             <img class="frame" alt="main frame" src={frame} />
+           </div>
+           <ArtGallery/>
+       </DndProvider>
     );
-  }
+
 }
 
 export default Container;
