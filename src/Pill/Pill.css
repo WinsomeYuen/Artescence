@@ -1,0 +1,14 @@
+.block {
+  text-align: center;
+  font-family: monospace;
+  vertical-align: middle;
+}
+
+.blockContainer {
+    width: 70%;
+    margin: 20px auto;
+    background: #fff;
+    vertical-align: middle;
+    border: 1px solid #000000;
+    box-shadow: 15px 20px #c0c1c4;
+}

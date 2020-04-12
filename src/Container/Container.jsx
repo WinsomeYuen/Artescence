@@ -6,15 +6,15 @@ import Option from '../Option/Option.jsx';
 import ItemTypes from '../ItemTypes.js';
 import update from 'immutability-helper';
 
-function Container (props){
+function Container (){
    const [main, setMain] = useState([
        { accepts: [ItemTypes.GALLERY, ItemTypes.MUSEUM, ItemTypes.EXPLORE], lastDroppedItem: null }
    ])
 
 	const [boxes] = useState([
-	   { name: 'Gallery', type: ItemTypes.GALLERY },
-	   { name: 'Museum', type: ItemTypes.MUSEUM },
-	   { name: 'Explore', type: ItemTypes.EXPLORE }
+	   { name: 'gallery', type: ItemTypes.GALLERY },
+	   { name: 'museum', type: ItemTypes.MUSEUM },
+	   { name: 'explore', type: ItemTypes.EXPLORE },
 	 ])
 
 	const [droppedBoxNames, setDroppedBoxNames] = useState([])

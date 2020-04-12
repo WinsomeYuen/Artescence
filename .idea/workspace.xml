@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dabfa9ba-5353-4d8b-aa42-f38cd29b3d9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Frame/Frame.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frame/Frame.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ItemTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Option/setIcon.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pill/Pill.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pill/Pill.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Container/Container.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/Container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Container/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/Container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gallery/Gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Option/Option.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gallery/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Option/Option.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/map-pin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/painting.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Container/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/Container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frame/Frame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frame/Frame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frame/Frame.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frame/Frame.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Option/Option.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Option/Option.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,17 +27,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Container/Container.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-177">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="237">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Frame/Frame.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="25" column="99" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frame/Frame.jsx">
+        <entry file="file://$PROJECT_DIR$/src/Pill/Pill.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pill/Pill.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -49,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Frame/Frame.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="231">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -58,17 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Option/Option.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Option/Option.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state>
+              <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -83,9 +88,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/background.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/public/manifest.json" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/ArtGallery/ArtGallery.css" />
         <option value="$PROJECT_DIR$/src/drag.js" />
@@ -96,23 +99,29 @@
         <option value="$PROJECT_DIR$/src/Gallery/Gallery.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/Frame/Frame.css" />
         <option value="$PROJECT_DIR$/src/Constants.js" />
         <option value="$PROJECT_DIR$/src/Gallery/Gallery.jsx" />
         <option value="$PROJECT_DIR$/src/App.jsx" />
-        <option value="$PROJECT_DIR$/src/Container/Container.jsx" />
-        <option value="$PROJECT_DIR$/src/Frame/Frame.jsx" />
         <option value="$PROJECT_DIR$/src/Container/Container.css" />
-        <option value="$PROJECT_DIR$/src/Option/Option.jsx" />
         <option value="$PROJECT_DIR$/src/Option/Option.css" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/Option/Option.jsx" />
+        <option value="$PROJECT_DIR$/src/Option/setIcon.jsx" />
+        <option value="$PROJECT_DIR$/src/Frame/Pill.jsx" />
+        <option value="$PROJECT_DIR$/src/Container/Container.jsx" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/Pill/Pill.jsx" />
+        <option value="$PROJECT_DIR$/src/Frame/Frame.css" />
+        <option value="$PROJECT_DIR$/src/Pill/Pill.css" />
+        <option value="$PROJECT_DIR$/src/Frame/Frame.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-268" />
-    <option name="y" value="-1043" />
-    <option name="width" value="1098" />
-    <option name="height" value="959" />
+    <option name="x" value="378" />
+    <option name="y" value="23" />
+    <option name="width" value="1047" />
+    <option name="height" value="804" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -131,25 +140,18 @@
             <path>
               <item name="artescence" type="b2602c69:ProjectViewProjectNode" />
               <item name="artescence" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="artescence" type="b2602c69:ProjectViewProjectNode" />
+              <item name="artescence" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="artescence" type="b2602c69:ProjectViewProjectNode" />
               <item name="artescence" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Container" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="artescence" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artescence" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Frame" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="artescence" type="b2602c69:ProjectViewProjectNode" />
-              <item name="artescence" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Option" type="462c0819:PsiDirectoryNode" />
+              <item name="Pill" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -167,6 +169,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Pill" />
       <recent name="$PROJECT_DIR$/src/Container" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -197,10 +200,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-268" y="-1043" width="1098" height="959" extended-state="0" />
-    <editor active="true" />
+    <frame x="378" y="23" width="1047" height="804" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24772313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25978988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -248,20 +250,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/robots.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
@@ -320,41 +308,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Container/Container.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Container/Container.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frame/Frame.jsx">
+    <entry file="file://$PROJECT_DIR$/src/Option/Option.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="147">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frame/Frame.css">
+    <entry file="file://$PROJECT_DIR$/src/Option/setIcon.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="252">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Option/Option.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state>
+          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Option/Option.css">
+    <entry file="file://$PROJECT_DIR$/src/Frame/Frame.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="231">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pill/Pill.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pill/Pill.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Container/Container.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frame/Frame.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" column="99" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
         </state>
       </provider>
     </entry>

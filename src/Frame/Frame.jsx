@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { useDrop } from 'react-dnd';
+import setIcon from '../Option/setIcon.jsx'
+import Pill from '../Pill/Pill.jsx'
 import './Frame.css';
 import pictureFrame from '../assets/picture-frame.png';
-import { useDrop } from 'react-dnd';
-
 
 const Frame = ({ accept, lastDroppedItem, onDrop }) =>  {
   const [frame, setFrame] = useState(pictureFrame);
@@ -12,15 +13,20 @@ const Frame = ({ accept, lastDroppedItem, onDrop }) =>  {
       collect: (monitor) => ({
         isOver: monitor.isOver(),
         canDrop: monitor.canDrop(),
-      }),
+      })
   })
 
-    return(
+   const isActive = isOver && canDrop
+
+   return(
         <div class="content"  ref={drop} >
           <img class="frame" alt="main frame" src={frame} />
           {lastDroppedItem && (
-             <p>Last dropped: {JSON.stringify(lastDroppedItem)}</p>
+             <div>
+             <img class="selectedIcon content" alt={ lastDroppedItem.type + " icon"} src={setIcon(lastDroppedItem.type)} />
+             </div>
           )}
+          {isActive ? <Pill text={"Drop icon into picture frame!"}/>: <Pill text={"Drag icons on the left into picture from!"}/> }
         </div>
     );
 
