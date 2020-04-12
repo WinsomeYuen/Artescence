@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dabfa9ba-5353-4d8b-aa42-f38cd29b3d9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Button/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Container/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/Container.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frame/Frame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frame/Frame.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frame/Frame.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frame/Frame.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Option/Option.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Option/Option.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Option/setIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Option/setIcon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pill/Pill.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pill/Pill.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Frame/Frame.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="464">
+              <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -48,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/Frame/Frame.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -62,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Button/Button.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="21">
+              <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -102,14 +93,14 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/Pill/Pill.jsx" />
         <option value="$PROJECT_DIR$/src/Pill/Pill.css" />
-        <option value="$PROJECT_DIR$/src/Frame/Frame.css" />
         <option value="$PROJECT_DIR$/src/Container/Container.jsx" />
-        <option value="$PROJECT_DIR$/src/Frame/Frame.jsx" />
         <option value="$PROJECT_DIR$/src/Option/setIcon.jsx" />
         <option value="$PROJECT_DIR$/src/Option/Option.jsx" />
         <option value="$PROJECT_DIR$/src/Button/Button.scss" />
         <option value="$PROJECT_DIR$/src/Button/Button.jsx" />
         <option value="$PROJECT_DIR$/src/Button/Button.css" />
+        <option value="$PROJECT_DIR$/src/Frame/Frame.css" />
+        <option value="$PROJECT_DIR$/src/Frame/Frame.jsx" />
       </list>
     </option>
   </component>
@@ -335,13 +326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frame/Frame.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Option/Option.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -366,10 +350,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frame/Frame.css">
+    <entry file="file://$PROJECT_DIR$/src/Button/Button.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="21">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -380,10 +364,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Button/Button.css">
+    <entry file="file://$PROJECT_DIR$/src/Frame/Frame.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state relative-caret-position="483">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frame/Frame.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
         </state>
       </provider>
     </entry>
