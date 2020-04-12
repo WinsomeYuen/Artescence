@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { NativeTypes } from 'react-dnd-html5-backend';
 import './Container.css';
 import Frame from '../Frame/Frame.jsx';
 import Option from '../Option/Option.jsx';

@@ -1,5 +1,5 @@
 .content{
-   position: fixed;
+   position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -14,4 +14,11 @@
 
 .selectedIcon{
    width: 30%;
+}
+
+.pill{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }

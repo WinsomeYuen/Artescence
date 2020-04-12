@@ -1,0 +1,33 @@
+.buttonBlock {
+  text-align: center;
+  font-family: monospace;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.btn{
+  position: relative;
+  font-weight: 700;
+  background-color: black;
+  border-radius: 0.6em;
+  display: inline-block;
+  margin: 1em;
+}
+
+.btn-outline{
+	 display: inline-block;
+	 border-radius: 0.6em;
+	 border: 0.3em solid black;
+	 padding: 1em;
+	 cursor: pointer;
+	 text-transform: uppercase;
+	 user-select: none;
+	 transform: translate3d(0.6em, -0.6em, 0);
+	 transition: transform 240ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	 transition-delay: 220ms;
+}
+
+.btn-outline:hover {
+	transform: translate3d(0, 0, 0);
+	transition: transform 120ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  }

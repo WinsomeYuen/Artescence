@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { useDrag } from 'react-dnd';
-import  ItemTypes from '../ItemTypes.js';
 import setIcon from './setIcon';
 import '../Container/Container.css';
 import './Option.css';
 
 const Option = ({name, type, isDropped }) => {
-  const [option, setOption] = useState(setIcon(name));
+  const [option] = useState(setIcon(name));
   const [{isDragging}, drag] = useDrag({
       item: { type: type },
   		collect: monitor => ({

@@ -1,11 +1,12 @@
 .block {
-  text-align: center;
-  font-family: monospace;
-  vertical-align: middle;
+	text-align: center;
+	font-family: monospace;
+	vertical-align: middle;
+	position: absolute;
 }
 
 .blockContainer {
-    width: 70%;
+    padding: 0 20px;
     margin: 20px auto;
     background: #fff;
     vertical-align: middle;

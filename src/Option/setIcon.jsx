@@ -10,6 +10,7 @@ export default function setIcon(name){
          return museum;
       case "explore":
          return explore;
-
+		default:
+			break;
    }
 }
