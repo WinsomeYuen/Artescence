@@ -5,6 +5,7 @@ export default function getResponse(xappToken){
        headers: {
          'X-Access-Token': xappToken,
          'Accept': 'application/json',
+         }
      })
      .then(function (response) {
        console.log(response);
