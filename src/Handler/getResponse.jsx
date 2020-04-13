@@ -1,8 +1,6 @@
 import axios from 'axios';
 
 export default function getResponse(xappToken){
-	console.log(xappToken);
-
 	axios.get('https://api.artsy.net/api/v1/artists/popular', {
        headers: {
          'X-Access-Token': xappToken,
