@@ -14,9 +14,9 @@ const Option = ({name, type, isDropped }) => {
     })
 
     return(
-       <div class="option">
+       <div className="option">
           { isDropped ? <s>{name}</s> :
-          <img class="icon box" alt={name + " icon"} src={option} ref={drag} style={{ opacity: isDragging ? 0.5 : 1 }}/> }
+          <img className="icon box" alt={name + " icon"} src={option} ref={drag} style={{ opacity: isDragging ? 0.5 : 1 }}/> }
        </div>
     );
 

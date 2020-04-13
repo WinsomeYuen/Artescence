@@ -25,7 +25,7 @@ function App (props) {
   const [image] = useState(backgroundImage);
 
   return(
-     <div class="backgroundImage" alt="background image" style={{backgroundImage: `url(${image})`}}>
+     <div className="backgroundImage" alt="background image" style={{backgroundImage: `url(${image})`}}>
          <Container/>
      </div>
   );

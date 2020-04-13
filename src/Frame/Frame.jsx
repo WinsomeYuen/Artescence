@@ -20,13 +20,13 @@ const Frame = ({ accept, lastDroppedItem, onDrop }) =>  {
    const isActive = isOver && canDrop
 
    return(
-        <div class="content"  ref={drop} >
-          {lastDroppedItem && ( <div class="animatedBox"><Button/></div> )}
-          <img class="frame" alt="main frame" src={frame} />
+        <div className="content"  ref={drop} >
+          {lastDroppedItem && ( <div className="animatedBox"><Button selectedIcon={lastDroppedItem.type}/></div> )}
+          <img className="frame" alt="main frame" src={frame} />
           {lastDroppedItem && (
-            <img class="selectedIcon content" alt={ lastDroppedItem.type + " icon"} src={setIcon(lastDroppedItem.type)} />
+            <img className="selectedIcon content" alt={ lastDroppedItem.type + " icon"} src={setIcon(lastDroppedItem.type)} />
           )}
-          <div class="animatedBox">{isActive ? <Pill text={"Drop icon into picture frame!"}/>:
+          <div className="animatedBox">{isActive ? <Pill text={"Drop icon into picture frame!"}/>:
             <Pill text={"Drag icons on the left into picture from!"}/> }</div>
         </div>
     );

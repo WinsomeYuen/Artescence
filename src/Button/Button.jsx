@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import getResponse from '../Handler/getResponse.jsx'
+import getToken from '../Handler/getToken.jsx'
 import './Button.css';
 
-export default function Button (){
+const Button = ({selectedIcon}) => {
+	const [selected] = selectedIcon;
+   const [xappToken, setXappToken] = useState(null);
+   useEffect(() => {
+     getToken().then(token => setXappToken(token))
+   }, [])
+
    return(
-      <div class="buttonBlock">
-         <span class="btn">
-            <input class="btn-outline" type="submit" value="Press Me"/>
+      <div className="buttonBlock">
+         <span className="btn">
+            <input className="btn-outline" type="button" value="Press Me" onClick={ () => getResponse(xappToken) }/>
          </span>
       </div>
    );
 }
+
+export default Button

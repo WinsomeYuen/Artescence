@@ -3,8 +3,8 @@ import './Pill.css';
 
 const Pill = ({text}) => {
    return(
-        <div class="block">
-		     <div class="blockContainer ">
+        <div className="block">
+		     <div className="blockContainer">
 		       <p>{text}</p>
 		     </div>
 	     </div>
