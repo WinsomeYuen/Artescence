@@ -27,7 +27,7 @@ const Frame = ({ accept, lastDroppedItem, onDrop }) =>  {
             <img className="selectedIcon content" alt={ lastDroppedItem.type + " icon"} src={setIcon(lastDroppedItem.type)} />
           )}
           <div className="animatedBox">{isActive ? <Pill text={"Drop icon into picture frame!"}/>:
-            <Pill text={"Drag icons on the left into picture from!"}/> }</div>
+            <Pill text={"Drag icons on the left into picture frame!"}/> }</div>
         </div>
     );
 
