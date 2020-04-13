@@ -6,7 +6,6 @@ export default async function getToken(){
          client_id: '019dff616c770f914613',
          client_secret: 'cc4728c2ec19b351259093297d8e0ddf'
      });
-     console.log('👉 Returned data:', response.data.token);
      return  response.data.token;
    } catch (e) {
      console.log(`😱 Axios request failed: ${e}`);
