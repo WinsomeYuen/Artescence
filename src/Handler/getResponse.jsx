@@ -14,9 +14,6 @@ async function getGallery(){
      const response = await axios.get('https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q='+ artist);
      const artwork = await axios.get('https://collectionapi.metmuseum.org/public/collection/v1/objects/'+ randomObject(response.data.objectIDs));
 	  console.log(artwork);
-	  return(
-           <div>Boo</div>
-        );
    } catch (e) {
      console.log(`😱 Axios request failed: ${e}`);
      return "Error";

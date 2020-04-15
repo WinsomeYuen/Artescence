@@ -16,12 +16,13 @@ const Frame = ({ accept, lastDroppedItem, onDrop }) =>  {
         canDrop: monitor.canDrop(),
       })
   })
+  const [popup, setPopup] = useState(false);
 
    const isActive = isOver && canDrop
 
    return(
         <div className="content"  ref={drop} >
-          {lastDroppedItem && ( <div className="animatedBox"><Button selectedIcon={lastDroppedItem.type}/></div> )}
+          {lastDroppedItem && ( <div className="animatedBox"><Button onClick={ () => setPopup(true) } selectedIcon={lastDroppedItem.type}/></div> )}
           <img className="frame" alt="main frame" src={frame} />
           {lastDroppedItem && (
             <img className="selectedIcon content" alt={ lastDroppedItem.type + " icon"} src={setIcon(lastDroppedItem.type)} />
