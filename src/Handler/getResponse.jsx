@@ -1,10 +1,14 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export default function getResponse(selected){
-   if(selected === "gallery"){
-      getGallery();
-   }
+export default function GetResponse(selected){
+	const [response, setResponse] = useState(null);
+
+	useEffect(() => {
+        getGallery().then(object => setResponse(object.data));
+   }, [])
+
+   return response;
 }
 
 async function getGallery(){
@@ -13,7 +17,7 @@ async function getGallery(){
       'Bridget Riley','Claude Monet','Henri Matisse','Georgia OKeeffe', 'Cindy Sherman' ]);
      const response = await axios.get('https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q='+ artist);
      const artwork = await axios.get('https://collectionapi.metmuseum.org/public/collection/v1/objects/'+ randomObject(response.data.objectIDs));
-	  console.log(artwork);
+      return artwork;
    } catch (e) {
      console.log(`😱 Axios request failed: ${e}`);
      return "Error";

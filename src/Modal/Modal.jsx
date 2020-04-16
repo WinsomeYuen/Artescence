@@ -1,14 +1,22 @@
 import React from 'react';
+import getResponse from '../Handler/getResponse.jsx';
+
 import './Modal.css';
 
-const Modal = () => {
+ const Modal = ({close, item}) => {
+	const response = getResponse(item);
+
 	return (
-   <div className='modal'>
-	   <div className='popup'>
-	       <h1>Hi</h1>
-	      <button>close me</button>
-	   </div>
-   </div>
+		<div>
+			{response &&(
+				<div className='modal'>
+		            <div className='popup'>
+		                <h1>{response.title}</h1>
+		               <button onClick={ () => { close(false) }}>close me</button>
+		            </div>
+		      </div>
+			)}
+		</div>
    );
 }
 
