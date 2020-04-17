@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site for kids to discover art &amp; culture">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Artescence</title>
+  <style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100vh;
+}
+</style><style type="text/css">.backgroundImage{
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style><style type="text/css">
+</style><style type="text/css">.block {
+	text-align: center;
+	font-family: monospace;
+	vertical-align: middle;
+	position: absolute;
+}
+
+.blockContainer {
+    padding: 0 20px;
+    margin: 20px auto;
+    background: #fff;
+    vertical-align: middle;
+    border: 1px solid #000000;
+    box-shadow: 15px 20px #c0c1c4;
+}</style><style type="text/css">.modal {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.popup {
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  border-radius: 20px;
+  background: white;
+}</style><style type="text/css">.buttonBlock {
+  text-align: center;
+  font-family: monospace;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.btn{
+  position: relative;
+  font-weight: 700;
+  background-color: black;
+  border-radius: 0.6em;
+  display: inline-block;
+  margin: 1em;
+}
+
+.btn-outline{
+	 display: inline-block;
+	 border-radius: 0.6em;
+	 border: 0.3em solid black;
+	 padding: 1em;
+	 cursor: pointer;
+	 text-transform: uppercase;
+	 -webkit-user-select: none;
+	         user-select: none;
+	 transform: translate3d(0.6em, -0.6em, 0);
+	 transition: transform 240ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	 transition-delay: 220ms;
+}
+
+.btn-outline:hover {
+	transform: translate3d(0, 0, 0);
+	transition: transform 120ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+input:focus {
+   outline:none;
+}
+
+input::-moz-focus-inner {
+   border:0;
+}</style><style type="text/css">.content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.frame{
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+
+.selectedIcon{
+   width: 30%;
+}
+
+.animatedBox{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}</style><style type="text/css">.option {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 150px;
+}
+
+.box {
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box::after {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+  transform: scale(1.25, 1.25);
+}
+
+.box:hover::after {
+    opacity: 1;
+}</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="backgroundImage" alt="background image" style="background-image: url(&quot;/static/media/landscape-evening.3ae2bc0f.svg&quot;);"><div><div style="overflow: hidden; clear: both;"><div><div class="content"><div class="animatedBox"><div class="buttonBlock"><span class="btn"><input class="btn-outline" type="button" value="Press Me"></span></div></div><img class="frame" alt="main frame" src="./Artescence_files/picture-frame.d7ea001f.png"><img class="selectedIcon content" alt="gallery icon" src="./Artescence_files/gallery.d3f5b3dc.svg"><div class="animatedBox"><div class="block"><div class="blockContainer"><p>Drag icons on the left into picture frame!</p></div></div></div></div></div></div><div style="overflow: hidden; clear: both;"><div class="option"><img class="icon box" alt="gallery icon" src="./Artescence_files/gallery.d3f5b3dc.svg" draggable="true" style="opacity: 1;"></div><div class="option"><img class="icon box" alt="museum icon" src="./Artescence_files/museum.322832d8.svg" draggable="true" style="opacity: 1;"></div><div class="option"><img class="icon box" alt="explore icon" src="./Artescence_files/explore.f9cc867f.svg" draggable="true" style="opacity: 1;"></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./Artescence_files/bundle.js"></script><script src="./Artescence_files/0.chunk.js"></script><script src="./Artescence_files/main.chunk.js"></script><script src="./Artescence_files/main.7fb0813a7e290e28227c.hot-update.js"></script>
+
+<div id="dailymail-extras-root"></div></body></html>

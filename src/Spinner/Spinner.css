@@ -1,0 +1,27 @@
+.center{
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	left:0; right:0;
+   top:0; bottom:0;
+   margin: auto;
+}
+
+.crystal-spinner{
+   padding: 20px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	animation: spin 3s linear infinite;
+	width: 180px;
+	height: 180px;
+}
+
+@keyframes spin {
+	0% {
+	transform: rotate(360deg);
+	}
+	100% {
+	transform: rotate(0deg);
+	}
+}
