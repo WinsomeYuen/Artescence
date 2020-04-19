@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## API's Used
+
+- [Google Knowledge Graph API](https://developers.google.com/knowledge-graph)
+- Mediawiki [images](https://www.mediawiki.org/wiki/API:Images) and [imageInfo](https://www.mediawiki.org/wiki/API:Imageinfo)
+- [Science Museum API](https://www.sciencemuseumgroup.org.uk/about-us/collection/using-our-collection-api/)
+- Google Map Platform [Maps URLs](https://developers.google.com/maps/documentation/urls/guide) and [Maps static API](https://developers.google.com/maps/documentation/maps-static/intro)
 
 ## Available Scripts
 
@@ -60,3 +65,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### Credit for assets
 
  https://ya-webdesign.com
+ 
+ This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
