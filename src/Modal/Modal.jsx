@@ -13,12 +13,26 @@ import './Modal.css';
 		   {response === null &&(<Spinner/>)}
 			{response &&(
 				<div className='modal'>
-		            <div className='popup'>
-		                <h1>{response.title}</h1>
-		                <h5>{response.artistDisplayName}</h5>
-		                <img className="image" alt="image" src={response.primaryImage}/>
-		               <button onClick={ () => { close(false) }}>close me</button>
-		            </div>
+	            <div className='popup'>
+	                <h1>{response.result.name}</h1>
+	                <h5>{response.result.description}</h5>
+	                {(response.image === "Error") &&(
+	                    <p className="text">{response.result.detailedDescription.articleBody}</p>
+	                )}
+                   {response.image && (response.image !== "Error") &&(
+                     <div className="container">
+								<div className="left">{response.result.detailedDescription.articleBody}</div>
+                        <div className="right"><img className="image" alt="image" src={response.image}/></div>
+                     </div>
+                   )}
+                   {response.result.image &&(
+                     <div className="container">
+                        <div className="left">{response.result.detailedDescription.articleBody}</div>
+                        <div className="right"><img className="image" alt="image" src={response.result.image.contentUrl}/></div>
+                     </div>
+                   )}
+	               <button onClick={ () => { close(false) }}>close me</button>
+	            </div>
 		      </div>
 			)}
 		</div>

@@ -23,7 +23,6 @@ async function getGallery(){
      });
 
      const painting = randomObject(paintingsByArtist);
-     var image = "";
      if(!painting.result.image){ getWiki(painting.result.name).then(object => painting['image'] = object) }
 
      return painting;
