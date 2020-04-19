@@ -6,12 +6,12 @@ import './Modal.css';
 
  const Modal = ({close, item}) => {
 	const response = getResponse(item);
-	console.log(response);
+	//console.log(response);
 
 	return (
 		<div>
 		   {response === null &&(<Spinner/>)}
-			{response &&(
+			{response && item === "gallery" &&(
 				<div className='modal'>
 	            <div className='popup'>
 	                <h1>{response.result.name}</h1>
@@ -22,18 +22,32 @@ import './Modal.css';
                    {response.image && (response.image !== "Error") &&(
                      <div className="container">
 								<div className="left">{response.result.detailedDescription.articleBody}</div>
-                        <div className="right"><img className="image" alt="image" src={response.image}/></div>
+                        <div className="right"><img className="image" alt="object" src={response.image}/></div>
                      </div>
                    )}
                    {response.result.image &&(
                      <div className="container">
                         <div className="left">{response.result.detailedDescription.articleBody}</div>
-                        <div className="right"><img className="image" alt="image" src={response.result.image.contentUrl}/></div>
+                        <div className="right"><img className="image" alt="object" src={response.result.image.contentUrl}/></div>
                      </div>
                    )}
 	               <button onClick={ () => { close(false) }}>close me</button>
 	            </div>
 		      </div>
+			)}
+			{response && item === "museum" &&(
+				<div className='modal'>
+               <div className='popup'>
+                  <h1>{response.title}</h1>
+                  <div className="left">
+                     <h5>{response.description}</h5>
+                  </div>
+                  <div className="right">
+                     <img className="image" alt="object" src={response.image}/>
+						</div>
+						<button onClick={ () => { close(false) }}>close me</button>
+               </div>
+            </div>
 			)}
 		</div>
    );

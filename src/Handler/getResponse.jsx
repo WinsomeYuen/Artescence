@@ -5,7 +5,11 @@ export default function GetResponse(selected){
 	const [response, setResponse] = useState(null);
 
 	useEffect(() => {
-        getGallery().then(object => setResponse(object));
+        if(selected === "gallery"){
+        		getGallery().then(object => setResponse(object));
+        } else if(selected === "museum"){
+        	   getMuseum().then(object => setResponse(object));
+        }
    }, [])
 
    return response;
@@ -55,6 +59,27 @@ async function getWiki(painting){
      }
 
      return image;
+   } catch (e) {
+     console.log(`😱 Axios request failed: ${e}`);
+     return "Error";
+   }
+}
+
+async function getMuseum(){
+	try {
+     const randomObject = await axios.get('https://collection.sciencemuseumgroup.org.uk/search/images/?random=1',{
+         headers: {
+            'Accept': 'application/json'
+         }
+     });
+     const response = randomObject.data.data[0].attributes;
+     var museumObject = {
+         "title": response.summary_title
+     };
+     museumObject["description"] = response.description[1] ? response.description[1].value : response.description[0].value;
+     museumObject["image"] = response.multimedia[0].processed.large_thumbnail.location ? response.multimedia[0].processed.large_thumbnail.location : "";
+
+     return museumObject;
    } catch (e) {
      console.log(`😱 Axios request failed: ${e}`);
      return "Error";
