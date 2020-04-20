@@ -8,7 +8,7 @@ export default function setGalleryResponse(response){
           {response.image === "Error" &&(
               <p className="text">{response.result.detailedDescription.articleBody}</p>
           )}
-          {response.image && (response.image !== 'Error') &&(
+          {response.image && response.image !== "Error" &&(
             <div className="container">
                <div className="left">{response.result.detailedDescription.articleBody}</div>
                <div className="right"><img className="image" alt="object" src={response.image}/></div>
