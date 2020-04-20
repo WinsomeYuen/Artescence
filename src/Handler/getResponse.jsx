@@ -9,6 +9,8 @@ export default function GetResponse(selected){
         		getGallery().then(object => setResponse(object));
         } else if(selected === "museum"){
         	   getMuseum().then(object => setResponse(object));
+        } else {
+            getExplore().then(object => setResponse(object));
         }
    }, [])
 
@@ -80,6 +82,25 @@ async function getMuseum(){
      museumObject["image"] = response.multimedia[0].processed.large_thumbnail.location ? response.multimedia[0].processed.large_thumbnail.location : "";
 
      return museumObject;
+   } catch (e) {
+     console.log(`😱 Axios request failed: ${e}`);
+     return "Error";
+   }
+}
+
+
+async function getExplore(){
+	try {
+		const location = randomObject(['Eiffel Tower,Paris France', 'The Spinx, Egypt', 'Tikal National Park,Guatemala']);
+		const searchUrl = "https://www.google.com/maps/embed/v1/place?key=AIzaSyC5uAjNixQGFWTpQ4nXj1379MGIGYBD6c0&zoom=18&maptype=satellite&q=" + location;
+		const headers = location.split(',')
+		var explore = {
+		  "title": headers[0],
+		  "subtitle": headers[1],
+		  "url": searchUrl
+		};
+
+      return explore;
    } catch (e) {
      console.log(`😱 Axios request failed: ${e}`);
      return "Error";

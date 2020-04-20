@@ -2,6 +2,7 @@ import React from 'react';
 import getResponse from '../Handler/getResponse.jsx';
 import setGalleryResponse from '../Handler/setGalleryResponse.jsx';
 import setMuseumResponse from '../Handler/setMuseumResponse.jsx';
+import setExploreResponse from '../Handler/setExploreResponse.jsx';
 import Spinner from '../Spinner/Spinner.jsx';
 
 import './Modal.css';
@@ -18,6 +19,7 @@ import './Modal.css';
 	            <div className='popup'>
 	                {item === "gallery" && (setGalleryResponse(response) )}
 	                {item === "museum" && (setMuseumResponse(response) )}
+	                {item === "explore" && (setExploreResponse(response) )}
 	               <button onClick={ () => { close(false) }}>close me</button>
 	            </div>
 		      </div>
