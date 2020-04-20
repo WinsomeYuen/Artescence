@@ -1,9 +1,22 @@
+# Artescence
+
+An interactive website to discover art, science & history for kids. This is a project made for Code First: Girls 2020 Hackathon.
+
 ## API's Used
 
 - [Google Knowledge Graph API](https://developers.google.com/knowledge-graph)
 - Mediawiki [images](https://www.mediawiki.org/wiki/API:Images) and [imageInfo](https://www.mediawiki.org/wiki/API:Imageinfo)
 - [Science Museum API](https://www.sciencemuseumgroup.org.uk/about-us/collection/using-our-collection-api/)
-- Google Map Platform [Maps URLs](https://developers.google.com/maps/documentation/urls/guide) and [Maps static API](https://developers.google.com/maps/documentation/maps-static/intro)
+- Google [Maps Embed API](https://developers.google.com/maps/documentation/embed/guide)
+
+## Credit
+
+The information and assets used in this project are either from the royalty free website: https://ya-webdesign.com
+, or from the respective API's mentioned above. I do not own any rights to them.
+
+# For Development
+
+This is an open project not aimed for commercial use, so feel free to fork your own copy and build upon the features provided here. This is not a constantly maintained repository besides updating dependencies. Alternatively feel free to submit a report for any issues found and I will judge on the scope of the issue whether to fix.
 
 ## Available Scripts
 
@@ -61,9 +74,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-### Credit for assets
-
- https://ya-webdesign.com
  
- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
