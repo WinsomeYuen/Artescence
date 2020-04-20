@@ -29,7 +29,8 @@ async function getGallery(){
      });
 
      const painting = randomObject(paintingsByArtist);
-     if(!painting.result.image){ getWiki(painting.result.name).then(object => painting['image'] = object) }
+     const retrievePainting = (!painting.result.image ?  await getWiki(painting.result.name) : "Error");
+     painting['image'] = retrievePainting;
 
      return painting;
    } catch (e) {
