@@ -17,10 +17,10 @@ import './Modal.css';
 			{response &&(
 				<div className='modal'>
 	            <div className='popup'>
+	            	 <button onClick={ () => { close(false) }}>close me</button>
 	                {item === "gallery" && (setGalleryResponse(response) )}
 	                {item === "museum" && (setMuseumResponse(response) )}
 	                {item === "explore" && (setExploreResponse(response) )}
-	               <button onClick={ () => { close(false) }}>close me</button>
 	            </div>
 		      </div>
 			)}

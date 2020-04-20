@@ -5,8 +5,11 @@ export default function getExploreResponse(response){
 		<div>
 			<h1>{response.title}</h1>
 			<h5>{response.subtitle}</h5>
-			<iframe title="map" width="500" height="450"  frameBorder="0" src={response.url} allowFullScreen>
-	      </iframe>
+			<div>
+				<div className="left"><iframe title="map" width="500" height="450"  frameBorder="0" src={response.url} allowFullScreen>
+		      </iframe></div>
+		      <div className="right"><p>{response.description}</p></div>
+	      </div>
       </div>
 	)
 }

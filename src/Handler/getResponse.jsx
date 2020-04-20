@@ -95,9 +95,12 @@ async function getExplore(){
 		const location = randomObject(['Eiffel Tower,Paris France', 'The Spinx, Egypt', 'Tikal National Park,Guatemala']);
 		const searchUrl = "https://www.google.com/maps/embed/v1/place?key=AIzaSyC5uAjNixQGFWTpQ4nXj1379MGIGYBD6c0&zoom=18&maptype=satellite&q=" + location;
 		const headers = location.split(',')
+		const response = await axios.get('https://kgsearch.googleapis.com/v1/entities:search?key=AIzaSyC5uAjNixQGFWTpQ4nXj1379MGIGYBD6c0&types=Place&query='+ headers[0]);
+
 		var explore = {
 		  "title": headers[0],
 		  "subtitle": headers[1],
+		  "description": response.data.itemListElement[0].result.detailedDescription.articleBody,
 		  "url": searchUrl
 		};
 
