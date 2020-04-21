@@ -4,10 +4,13 @@ import './index.css';
 import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
 import { DndProvider } from 'react-dnd';
-import Backend from 'react-dnd-html5-backend';
+//import Backend from 'react-dnd-html5-backend';
+//import TouchBackend from 'react-dnd-touch-backend'
+import MultiBackend from 'react-dnd-multi-backend';
+import HTML5toTouch from 'react-dnd-multi-backend/dist/esm/HTML5toTouch';
 
 ReactDOM.render(
-  <DndProvider backend={Backend}>
+  <DndProvider backend={MultiBackend} options={HTML5toTouch}>
 	  <React.StrictMode>
 	    <App />
 	  </React.StrictMode>
