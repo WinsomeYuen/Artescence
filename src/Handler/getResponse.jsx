@@ -20,7 +20,7 @@ export default function GetResponse(selected){
 async function getGallery(){
 	try {
 	  const artist = 'Painting by ' + randomObject(['Vincent van Gogh','Henri Matisse']);
-     const response = await axios.get('https://kgsearch.googleapis.com/v1/entities:search?key=AIzaSyC5uAjNixQGFWTpQ4nXj1379MGIGYBD6c0&types=VisualArtwork&query='+ artist);
+     const response = await axios.get('https://kgsearch.googleapis.com/v1/entities:search?key=' + process.env.REACT_APP_API_KEY + '&types=VisualArtwork&query='+ artist);
      const itemList = response.data.itemListElement;
 
      var paintingsByArtist = [];
@@ -93,7 +93,7 @@ async function getMuseum(){
 async function getExplore(){
 	try {
 		const location = randomObject(['Eiffel Tower,Paris France', 'The Spinx, Egypt', 'Tikal National Park,Guatemala']);
-		const searchUrl = "https://www.google.com/maps/embed/v1/place?key=AIzaSyC5uAjNixQGFWTpQ4nXj1379MGIGYBD6c0&zoom=18&maptype=satellite&q=" + location;
+		const searchUrl = "https://www.google.com/maps/embed/v1/place?key="+ process.env.REACT_APP_API_KEY + "&zoom=18&maptype=satellite&q=" + location;
 		const headers = location.split(',')
 		const response = await axios.get('https://kgsearch.googleapis.com/v1/entities:search?key=AIzaSyC5uAjNixQGFWTpQ4nXj1379MGIGYBD6c0&types=Place&query='+ headers[0]);
 
