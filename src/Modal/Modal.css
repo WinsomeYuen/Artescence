@@ -49,6 +49,7 @@
   background: #ECEFF1;
   padding: 60px 40px;
   display: flex;
+  text-align: justify;
 }
 
 .left{

@@ -10,6 +10,7 @@ import './Modal.css';
 
  const Modal = ({close, item}) => {
 	const response = getResponse(item);
+	//console.log(response);
 
 	return (
 		<div>
@@ -19,8 +20,8 @@ import './Modal.css';
 					<div className="modal-sandbox"></div>
 	            <div className='modal-box'>
 	                {item === "gallery" && (setGalleryResponse(response, close) )}
-	                {item === "museum" && (setMuseumResponse(response) )}
-	                {item === "explore" && (setExploreResponse(response) )}
+	                {item === "museum" && (setMuseumResponse(response, close) )}
+	                {item === "explore" && (setExploreResponse(response, close) )}
 	            </div>
 		      </div>
 			)}

@@ -2,7 +2,6 @@ import React from 'react';
 import '../Button/Button.css';
 
 export default function setGalleryResponse(response, close){
-	console.log(response);
    return(
       <div>
          <div className="modal-header">
@@ -16,7 +15,7 @@ export default function setGalleryResponse(response, close){
 	              <p className="text">{response.result.detailedDescription.articleBody}</p>
 	              <div className="buttonCentre">
                     <span className="btn">
-                       <input className="btn-outline" type="button" value="More on Wiki" onClick={response.result.detailedDescription.url}/>
+                        <a href={response.result.detailedDescription.url}><button className="btn-outline">Learn More</button></a>
                     </span>
                  </div>
 	             </div>
@@ -27,7 +26,7 @@ export default function setGalleryResponse(response, close){
 	                  <span className="modal-text">{response.result.detailedDescription.articleBody}</span>
 	                  <div className="buttonCentre">
                         <span className="btn">
-                           <input className="btn-outline" type="button" value="More on Wiki" onClick={response.result.detailedDescription.url}/>
+                           <a href={response.result.detailedDescription.url}><button className="btn-outline">Learn More</button></a>
                         </span>
                      </div>
 	               </div>
@@ -40,7 +39,7 @@ export default function setGalleryResponse(response, close){
 	                  <span className="modal-text">{response.result.detailedDescription.articleBody}</span>
 	                  <div className="buttonCentre">
                         <span className="btn">
-                           <input className="btn-outline" type="button" value="More on Wiki" onClick={response.result.detailedDescription.url}/>
+                           <a href={response.result.detailedDescription.url}><button className="btn-outline">Learn More</button></a>
                         </span>
                      </div>
 	               </div>
