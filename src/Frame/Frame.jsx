@@ -4,7 +4,7 @@ import setIcon from '../Option/setIcon.jsx';
 import Pill from '../Pill/Pill.jsx';
 import Modal from '../Modal/Modal.jsx';
 import pictureFrame from '../assets/picture-frame.png';
-import './Button.css';
+import '../Button/Button.css';
 import './Frame.css';
 
 const Frame = ({ accept, lastDroppedItem, onDrop }) =>  {
