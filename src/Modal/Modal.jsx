@@ -3,14 +3,26 @@ import getResponse from '../Handler/getResponse.jsx';
 import setGalleryResponse from '../Handler/setGalleryResponse.jsx';
 import setMuseumResponse from '../Handler/setMuseumResponse.jsx';
 import setExploreResponse from '../Handler/setExploreResponse.jsx';
-import image from '../assets/scrolling-background.png';
 import Spinner from '../Spinner/Spinner.jsx';
-
+import explore from '../assets/explore-scrolling.png';
+import museum from '../assets/museum-scrolling.png';
+import gallery from '../assets/gallery-scrolling.png';
 import './Modal.css';
+
+function backgroundImage(item){
+   if(item === "gallery"){
+       return gallery;
+   } else if (item === "museum"){
+       return museum;
+    } else {
+       return explore;
+   }
+}
+
 
  const Modal = ({close, item}) => {
 	const response = getResponse(item);
-	//console.log(response);
+	const image = backgroundImage(item);
 
 	return (
 		<div>
