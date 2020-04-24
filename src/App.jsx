@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Container from './Container/Container.jsx';
 import landscape from './assets/landscape.svg';
@@ -22,7 +22,7 @@ function backgroundImage(){
 }
 
 function App (props) {
-  const [image] = useState(backgroundImage);
+  const image = backgroundImage();
 
   return(
      <div className="backgroundImage" alt="background image" style={{backgroundImage: `url(${image})`}}>
