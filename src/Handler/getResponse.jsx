@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import getData from './getData.jsx';
 
 export default function GetResponse(selected){
 	const [response, setResponse] = useState(null);
@@ -19,10 +20,11 @@ export default function GetResponse(selected){
 
 async function getGallery(){
 	try {
-	  const artist = 'Painting by ' + randomObject(['Vincent van Gogh','Henri Matisse','Andy Warhol','Piet Mondrian']);
+	  const randomArtist = randomObject(['Vincent van Gogh','Henri Matisse','Andy Warhol','Piet Mondrian']);
+     const artist = 'Painting by ' + randomArtist;
      const response = await axios.get('https://kgsearch.googleapis.com/v1/entities:search?key=' + process.env.REACT_APP_API_KEY + '&types=VisualArtwork&query='+ artist);
      const itemList = response.data.itemListElement;
-     console.log(itemList);
+     getData(randomArtist);
 
      var paintingsByArtist = [];
      itemList.forEach(function (item) {
