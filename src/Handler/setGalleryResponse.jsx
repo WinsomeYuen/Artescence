@@ -2,6 +2,7 @@ import React from 'react';
 import '../Button/Button.css';
 
 export default function setGalleryResponse(response, close){
+	console.log(response);
    return(
       <div>
          <div className="modal-header">
@@ -15,8 +16,13 @@ export default function setGalleryResponse(response, close){
 	              <p className="text">{response.result.detailedDescription.articleBody}</p>
 	              <div className="buttonCentre">
                     <span className="btn">
-                        <a href={response.result.detailedDescription.url}><button className="btn-outline">Learn More</button></a>
+                        <a href={response.result.detailedDescription.url}><button className="btn-outline">More About Artwork</button></a>
                     </span>
+                    {response.tateLink &&(
+                       <span className="btn">
+                          <a href={response.tateLink}><button className="btn-outline">More About Artist</button></a>
+                       </span>
+                    )}
                  </div>
 	             </div>
 	          )}
@@ -26,8 +32,13 @@ export default function setGalleryResponse(response, close){
 	                  <span className="modal-text">{response.result.detailedDescription.articleBody}</span>
 	                  <div className="buttonCentre">
                         <span className="btn">
-                           <a href={response.result.detailedDescription.url}><button className="btn-outline">Learn More</button></a>
+                           <a href={response.result.detailedDescription.url}><button className="btn-outline">More About Artwork</button></a>
                         </span>
+                        {response.tateLink &&(
+                           <span className="btn">
+                              <a href={response.tateLink}><button className="btn-outline">More About Artist</button></a>
+                           </span>
+                        )}
                      </div>
 	               </div>
 	               <div className="right"><img className="image" alt="object" src={response.image}/></div>
@@ -39,8 +50,13 @@ export default function setGalleryResponse(response, close){
 	                  <span className="modal-text">{response.result.detailedDescription.articleBody}</span>
 	                  <div className="buttonCentre">
                         <span className="btn">
-                           <a href={response.result.detailedDescription.url}><button className="btn-outline">Learn More</button></a>
+                           <a href={response.result.detailedDescription.url}><button className="btn-outline">More About Artwork</button></a>
                         </span>
+                        {response.tateLink &&(
+                           <span className="btn">
+                              <a href={response.tateLink}><button className="btn-outline">More About Artist</button></a>
+                           </span>
+                        )}
                      </div>
 	               </div>
 	               <div className="right"><img className="image" alt="object" src={response.result.image.contentUrl}/></div>

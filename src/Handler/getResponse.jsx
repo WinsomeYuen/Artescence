@@ -24,7 +24,6 @@ async function getGallery(){
      const artist = 'Painting by ' + randomArtist;
      const response = await axios.get('https://kgsearch.googleapis.com/v1/entities:search?key=' + process.env.REACT_APP_API_KEY + '&types=VisualArtwork&query='+ artist);
      const itemList = response.data.itemListElement;
-     getData(randomArtist);
 
      var paintingsByArtist = [];
      itemList.forEach(function (item) {
@@ -34,6 +33,11 @@ async function getGallery(){
      const painting = randomObject(paintingsByArtist);
      const retrievePainting = (!painting.result.image ?  await getWiki(painting.result.name) : "");
      painting['image'] = retrievePainting;
+
+     const tateArtist = await getData(randomArtist);
+	  if(tateArtist.url){
+	      painting['tateLink'] = tateArtist.url;
+	  }
 
      return painting;
    } catch (e) {
