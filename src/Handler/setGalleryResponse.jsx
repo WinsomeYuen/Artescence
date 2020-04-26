@@ -16,11 +16,11 @@ export default function setGalleryResponse(response, close){
 	              <p className="text">{response.result.detailedDescription.articleBody}</p>
 	              <div className="buttonCentre">
                     <span className="btn">
-                        <a href={response.result.detailedDescription.url} target="_blank"><button className="btn-outline">More About Artwork</button></a>
+                        <a href={response.result.detailedDescription.url} target="_blank" rel="noopener noreferrer"><button className="btn-outline">More About Artwork</button></a>
                     </span>
                     {response.tateLink &&(
                        <span className="btn">
-                          <a href={response.tateLink} target="_blank"><button className="btn-outline">More About Artist</button></a>
+                          <a href={response.tateLink} target="_blank" rel="noopener noreferrer"><button className="btn-outline">More About Artist</button></a>
                        </span>
                     )}
                  </div>
@@ -32,11 +32,11 @@ export default function setGalleryResponse(response, close){
 	                  <span className="modal-text">{response.result.detailedDescription.articleBody}</span>
 	                  <div className="buttonCentre">
                         <span className="btn">
-                           <a href={response.result.detailedDescription.url} target="_blank"><button className="btn-outline">More About Artwork</button></a>
+                           <a href={response.result.detailedDescription.url} target="_blank" rel="noopener noreferrer"><button className="btn-outline">More About Artwork</button></a>
                         </span>
                         {response.tateLink &&(
                            <span className="btn">
-                              <a href={response.tateLink} target="_blank"><button className="btn-outline">More About Artist</button></a>
+                              <a href={response.tateLink} target="_blank" rel="noopener noreferrer"><button className="btn-outline">More About Artist</button></a>
                            </span>
                         )}
                      </div>
@@ -50,11 +50,11 @@ export default function setGalleryResponse(response, close){
 	                  <span className="modal-text">{response.result.detailedDescription.articleBody}</span>
 	                  <div className="buttonCentre">
                         <span className="btn">
-                           <a href={response.result.detailedDescription.url} target="_blank"><button className="btn-outline">More About Artwork</button></a>
+                           <a href={response.result.detailedDescription.url} target="_blank" rel="noopener noreferrer"><button className="btn-outline">More About Artwork</button></a>
                         </span>
                         {response.tateLink &&(
                            <span className="btn">
-                              <a href={response.tateLink} target="_blank"><button className="btn-outline">More About Artist</button></a>
+                              <a href={response.tateLink} target="_blank" rel="noopener noreferrer"><button className="btn-outline">More About Artist</button></a>
                            </span>
                         )}
                      </div>
