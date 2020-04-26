@@ -54,7 +54,7 @@ function Container (){
             ))}
           </div>
 
-          <div style={{ overflow: 'hidden', clear: 'both' }}>
+          <div className="options" style={{ overflow: 'hidden', clear: 'both' }}>
             {boxes.map(({ name, type }, index) => (
               <Option
                 name={name}
