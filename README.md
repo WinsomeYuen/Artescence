@@ -1,6 +1,6 @@
 # Artescence
 
-An interactive website to discover art, science & history for kids. This is a project made for Code First: Girls 2020 Hackathon.
+An interactive website to discover art, science & history young people. This is a project made for Code First: Girls 2020 Hackathon.
 
 ## API's Used
 
@@ -13,6 +13,8 @@ An interactive website to discover art, science & history for kids. This is a pr
 
 The information and assets used in this project are either from the royalty free website: https://ya-webdesign.com
 , or from the respective API's mentioned above. I do not own any rights to them.
+
+<a href="https://www.freepik.com/free-photos-vectors/banner">Banner vector created by katemangostar - www.freepik.com</a>
 
 # For Development
 
