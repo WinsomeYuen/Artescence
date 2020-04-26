@@ -12,7 +12,7 @@ export default function setMuseumResponse(response, close){
 		         <span className="modal-text"><h5>{response.description}</h5></span>
 		         <div className="buttonCentre">
                  <span className="btn">
-                    <a href={response.url}><button className="btn-outline">Learn More</button></a>
+                    <a href={response.url} target="_blank"><button className="btn-outline">Learn More</button></a>
                  </span>
 	            </div>
 		      </div>
