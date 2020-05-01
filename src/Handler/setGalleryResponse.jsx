@@ -2,7 +2,6 @@ import React from 'react';
 import '../Button/Button.css';
 
 export default function setGalleryResponse(response, close){
-	console.log(response);
    return(
       <div>
          <div className="modal-header">
