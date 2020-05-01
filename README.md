@@ -1,6 +1,8 @@
+<p align="center"><img alt="artescence logo" src="/public/Artescence.png"/></p>
+
 # Artescence
 
-An interactive website to discover art, science & history young people. This is a project made for Code First: Girls 2020 Hackathon.
+An interactive website to discover art, science & history for young people. This is a project made for Code First: Girls 2020 Hackathon.
 
 ## API's Used
 
